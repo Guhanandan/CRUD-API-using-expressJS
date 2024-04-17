@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 
 app.use('/api/products' , routeProducts)
 
-mongoose.connect('mongodb+srv://yuva6542060:S87XbEscGJ6VHjMM@backenddb.rdu0q7v.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB')
+mongoose.connect('mongodb+srv://<username>:<password>@backenddb.rdu0q7v.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB')
   .then(() => {
     console.log('Connected to MongoDB database');
     const PORT = process.env.PORT || 3000;
